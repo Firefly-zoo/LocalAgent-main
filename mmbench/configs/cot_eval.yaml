@@ -1,0 +1,21 @@
+api_base: local_swift_engine
+
+base_model: ../models/Qwen3-VL-4B-Instruct
+adapters: []
+
+dataset_path: ../data/fgvqa/test-00000-of-00001.parquet
+work_dir: ../outputs/cot_eval
+
+with_tools: false
+use_system_prompt: true
+system_prompt_style: direct
+system_prompt_file: ../mmbench/prompts/cot.txt
+
+max_new_tokens: 1024
+temperature: 0.0
+top_p: 1.0
+top_k: 20
+request_timeout: 600
+request_chunk_size: 8
+progress_every: 50
+limit: null

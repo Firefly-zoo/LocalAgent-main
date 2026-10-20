@@ -1,0 +1,11 @@
+torch
+torchvision
+transformers
+vllm==0.17.*
+pyarrow
+Pillow
+tqdm
+PyYAML
+numpy
+scikit-image
+opencv-python

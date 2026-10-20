@@ -1,0 +1,29 @@
+api_base: local_swift_engine
+
+base_model: ../models/Qwen3-VL-4B-Instruct
+adapters: []
+
+dataset_path: ../data/fgvqa/test-00000-of-00001.parquet
+work_dir: ../outputs/tool_eval_multiple_choice
+
+with_tools: true
+use_system_prompt: true
+system_prompt_file: ../mmbench/prompts/tool_multiple_choice.txt
+
+allowed_tool_names:
+  - measure_dino_patch_mnn
+  - measure_local_geometry_consistency
+
+question_scope: multiple_choice
+
+max_new_tokens: 1024
+temperature: 0.0
+top_p: 1.0
+top_k: 20
+request_timeout: 600
+request_chunk_size: 8
+max_turns: 2
+max_tool_calls: 1
+gpu_memory_utilization: 0.9
+progress_every: 50
+limit: null

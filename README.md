@@ -4,16 +4,8 @@
 
 🎉 **Accepted to NeurIPS 2026.**
 
-> **Coming soon.** We are preparing the public release.
+LocalAgent combines multimodal reasoning with local evidence verification to determine whether images show the same physical object under changes in viewpoint, lighting, and background.
 
-LocalAgent combines a multimodal large language model with local evidence verification to determine whether images show the same physical object, even when viewpoints, lighting, or backgrounds differ.
+The repository contains the training, testing, and evaluation code for the paper.
 
-## Open-source plan
-
-- [ ] Release the inference code and local evidence verifiers.
-- [ ] Release the training code and configurations.
-- [ ] Release model checkpoints.
-- [ ] Add setup, usage, and evaluation instructions.
-- [ ] Add the paper link, citation, and license.
-
-Please watch this repository for updates.
+> **Coming soon.** Additional release materials will be added soon.
